@@ -182,8 +182,38 @@ p{
 }
 
 /*
+                             PROJECTS SECTION
+*/
+#projects h3{
+  color:#080A0C;
+  height:30px;
+  font-size:1.5rem;
+  line-height: 1;
+  text-align: left;
+}
+.proj-desc{
+  margin-top:-7px;
+  border-radius:0 0 3px 3px;
+}
+.project-holder{
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+}
+
+.card-img-top{
+  height: 25rem;
+  object-fit: cover;
+  width: 100%;
+}
+/*
                                 ABOUT SECTION
 */
+#about{
+  background-color:#1B3336;
+  background-image: url("/img/cubes.png");
+}
+#about h2{color:#fff;}
 #about img{
   /*making the img round*/
   max-height:400px;
