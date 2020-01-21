@@ -196,7 +196,6 @@ p{
   border-radius:0 0 3px 3px;
 }
 .project-holder{
-  display:flex;
   flex-wrap:wrap;
   flex-direction:row;
 }
@@ -255,6 +254,13 @@ p{
   width:220px;
   margin: 1%;
   font-size:2rem;
+}
+
+/*
+                            BLOG PAGE
+*/
+.blogTitle{
+  flex-direction: column;
 }
 
 
