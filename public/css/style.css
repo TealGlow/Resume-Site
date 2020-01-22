@@ -101,6 +101,19 @@ p{
   background-color:white;
 }
 
+/*TO TOP ARROW*/
+.top-arrow{
+  height:100px;
+  width:100px;
+  z-index:999;
+  position: fixed;
+  bottom:60px;
+  right:40px;
+  text-align: center;
+  font-size:4rem;
+  display:none;
+}
+
 /*
                               HEADER SECTION
 */
@@ -262,6 +275,22 @@ p{
 .blogTitle{
   flex-direction: column;
 }
+
+/*
+                          FOOTER
+*/
+#footer{
+  position: relative;
+  bottom:0;
+  height:40px;
+  align-self: flex-end;
+  color:#fff;
+}
+.cont{
+  height:100%;
+  width:100%;
+}
+
 
 
   /*

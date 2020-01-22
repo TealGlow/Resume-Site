@@ -1,0 +1,32 @@
+body,html{
+  height:100%;
+  width:100%;
+}
+body{
+  font-family: 'Source Code Pro', monospace;
+
+  background-color: #464159;
+  color:#fff;
+}
+.content{
+  height:100%;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom:-40px;
+}
+.custom-btn{
+  margin-top:30px;
+}
+#footer{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  text-align: center;
+  height:40px;
+  align-self: flex-end;
+}
