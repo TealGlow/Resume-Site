@@ -4,6 +4,10 @@ body{
   background-image: url("/img/gplay.png");
   overflow-x: hidden;
 }
+body,html{
+  height:100%;
+  width:100%;
+}
 ::selection{
   background-color: #84298f;
   color:#fff;
@@ -120,8 +124,15 @@ p{
 #header{
   padding:17% 19%;
   background-image: url("/img/dark.jpg");
+  flex-direction: column;
 }
 #header p{text-align: center;}
+.header-btn{
+  padding:1% 2%;
+  width:220px;
+  margin: 1%;
+  font-size:2rem;
+}
 
 
 
@@ -262,12 +273,7 @@ p{
   width:100%;
   text-align: center;
 }
-.contact-buttons .btn{
-  padding:1% 2%;
-  width:220px;
-  margin: 1%;
-  font-size:2rem;
-}
+
 
 /*
                             BLOG PAGE
@@ -275,6 +281,19 @@ p{
 .blogTitle{
   flex-direction: column;
 }
+.compose-content{
+  overflow:hidden;
+}
+
+/*
+                        RESUME PAGE
+*/
+.resume-frame{
+  height:100%;
+  width:100%;
+  margin-bottom:-46px;
+}
+
 
 /*
                           FOOTER

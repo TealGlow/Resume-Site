@@ -39,7 +39,9 @@ app.get("/", (req,res)=>{
   //home screen
   res.render("home");
 });
-
+app.get("/resume", (req,res)=>{
+  res.render("resume");
+});
 
 //pages for the blogging site
 app.get("/blog", (req, res)=>{
