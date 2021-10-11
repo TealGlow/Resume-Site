@@ -26,7 +26,7 @@ const postSchema={
   content: String
 };*/
 
-//model for the posts
+//model for the posts hello :)
 //const Post = mongoose.model("Post", postSchema);
 
 //setting up the app
