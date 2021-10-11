@@ -4,7 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
-const mongoose = require("mongoose");
+//const mongoose = require("mongoose");
 const sentencer = require("sentencer");
 
 const homeStartingContent = "Lacus vel facilisis volutpat est velit egestas dui id ornare. Semper auctor neque vitae tempus quam. Sit amet cursus sit amet dictum sit amet justo. Viverra tellus in hac habitasse. Imperdiet proin fermentum leo vel orci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Adipiscing elit ut aliquam purus sit amet luctus venenatis lectus. Ultrices vitae auctor eu augue ut lectus arcu bibendum at. Odio euismod lacinia at quis risus sed vulputate odio ut. Cursus mattis molestie a iaculis at erat pellentesque adipiscing.";
@@ -17,16 +17,17 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 //setting up the blog DB
-mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
+//mongoose.connect("mongodb://localhost:27017/blogDB", {useNewUrlParser: true});
 
 //setting up the post schema
+/*
 const postSchema={
   title: String,
   content: String
-};
+};*/
 
 //model for the posts
-const Post = mongoose.model("Post", postSchema);
+//const Post = mongoose.model("Post", postSchema);
 
 //setting up the app
 app.use(express.static("public"));
@@ -44,6 +45,7 @@ app.get("/resume", (req,res)=>{
 });
 
 //pages for the blogging site
+/*
 app.get("/blog", (req, res)=>{
   //blog screen
   Post.find({}, function(err, posts){
@@ -53,11 +55,14 @@ app.get("/blog", (req, res)=>{
     });
   });
 });
+
+
 app.get("/compose", (req,res)=>{
   //compose allowfullscreen
   res.render("compose");
 });
 
+/
 app.post("/compose", (req, res)=>{
   //handing the entering of post
   const post = new Post({
@@ -72,6 +77,7 @@ app.post("/compose", (req, res)=>{
   });
 });
 
+
 app.get("/posts/:postId", function(req, res){
   const reqPostId = req.params.postId;
   //const requestedTitle = _.lowerCase(req.params.postName);
@@ -82,7 +88,7 @@ app.get("/posts/:postId", function(req, res){
     }
   });
 });
-
+*/
 //pages for word list
 app.get("/adjnoun", (req, res)=>{
   res.render("randomwords", {items: words});
