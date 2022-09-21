@@ -34,6 +34,10 @@ h2{
 
 h3{font-size:1rem;}
 
+hr{
+ border-color:#84298f;
+}
+
 a{color:#84298f;}
 
 a:hover{color:#84298f;}
@@ -250,11 +254,8 @@ p{
   margin-bottom:2%;
 }
 
-#experience hr{
-  width:80%;
-  border-color:#84298f;
-}
 #experience li{
+  font-family: 'Montserrat', sans-serif;
   margin:4% 3%;
 }
 
@@ -272,7 +273,7 @@ p{
   padding-left:5%;
   font-size: 1rem;
 }
-.experience-content p{
+.experience-content .experience-body{
   padding:.5%;
   color:#080A0C;
 }
@@ -290,31 +291,49 @@ p{
   color:#fff;
   margin:0%;
 }
+#projects .smaller-chip-container{
+  justify-content: flex-start;
+  margin-top:3%;
+  padding:1% 7%;
+}
+#projects .btn{
+  margin:1% 7.2%;
+  margin-bottom:3%;
+}
 
-.accordion-button h3{
-  padding-left:1%;
-  padding-top:2%;
+.projects-information{
+  background-color: #84298f;
+  width:100%;
+  padding:2% 3%;
+  color:#fff;
+}
+.projects-content h3{
+  padding-left:5%;
+  padding-top:3%;
   font-size: 2rem;
 }
-#projects .smaller-chip-container{
-  padding-left:1%;
-  justify-content: flex-start;
-}
-
-.single-project{
+.projects-body p{
   width:100%;
+  color:#080A0C;
+  padding:0% 7.2%;
 }
 
-.accordion-button{
-  display:flex;
-  flex-direction: column;
-  align-items: flex-start;
+.projects-content h4{
+  padding-left:5%;
+  font-size: 1rem;
+}
+.projects-content{
+  width:60%;
+  margin-bottom:4%;
 }
 
-.project-holder{
+.projects-content .projects-body{
   width:100%;
-  margin:3% 5%;
+  padding:.5%;
+  color:#080A0C;
 }
+
+
 
 /*
                                   CONTACT SECTION
