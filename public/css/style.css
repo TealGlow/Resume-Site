@@ -34,6 +34,10 @@ h2{
 
 h3{font-size:1rem;}
 
+hr{
+ border-color:#84298f;
+}
+
 a{color:#84298f;}
 
 a:hover{color:#84298f;}
@@ -250,11 +254,8 @@ p{
   margin-bottom:2%;
 }
 
-#experience hr{
-  width:80%;
-  border-color:#84298f;
-}
 #experience li{
+  font-family: 'Montserrat', sans-serif;
   margin:4% 3%;
 }
 
@@ -263,19 +264,16 @@ p{
   padding:2% 3%;
 }
 .experience-content h3{
-  /*possibly put spacing-padding?*/
   padding-left:5%;
   padding-top:3%;
   font-size: 2rem;
 }
 
 .experience-content h4{
-  /*possibly put spacing-padding?*/
   padding-left:5%;
   font-size: 1rem;
 }
-.experience-content p{
-  /*possibly put spacing-padding?*/
+.experience-content .experience-body{
   padding:.5%;
   color:#080A0C;
 }
@@ -285,74 +283,57 @@ p{
                              PROJECTS SECTION
 */
 #projects{
+  width:100%;
   background-color:#1B3336;
   background-image: url("/img/cubes.png");
 }
 #projects h2{
   color:#fff;
+  margin:0%;
 }
-#projects h3{
-  color:#080A0C;
-  height:30px;
-  font-size:1.5rem;
-  line-height: 1;
-  text-align: left;
+#projects .smaller-chip-container{
+  justify-content: flex-start;
+  margin-top:3%;
+  padding:1% 7%;
 }
-.proj-desc{
-  margin-top:-7px;
-  border-radius:0 0 3px 3px;
-}
-.project-holder{
-  flex-wrap:wrap;
-  flex-direction:row;
+#projects .btn{
+  margin:1% 7.2%;
+  margin-bottom:3%;
 }
 
-
-.project-language{
+.projects-information{
+  background-color: #84298f;
   width:100%;
-  margin:4% 0%;
+  padding:2% 3%;
+  color:#fff;
 }
-.card-content{
-  flex-direction:column;
-  justify-content: space-between;
+.projects-content h3{
+  padding-left:5%;
+  padding-top:3%;
+  font-size: 2rem;
 }
-.project-btn-container{
-  margin:4% 0%;
-}
-
-.card-img-top{
-  height: 25rem;
-  object-fit: cover;
-  width: 100%;
-}
-/*
-                                ABOUT SECTION
-*/
-#about{
-  background-color:#1B3336;
-  background-image: url("/img/cubes.png");
-}
-#about h2{color:#fff;}
-#about img{
-  /*making the img round*/
-  max-height:400px;
-  border-radius: 50%;
-  transition:1s;
-}
-#about img:hover{
-  transition:1s;
-  border-radius: 0;
-}
-.about-content{flex-direction:row;}
-
-.about-content p{
-  overflow-x:hidden;
-  overflow-y:auto;
-  min-width:40%;
-  padding:2%;
+.projects-body p{
+  width:100%;
   color:#080A0C;
-  max-height:400px;
+  padding:0% 7.2%;
 }
+
+.projects-content h4{
+  padding-left:5%;
+  font-size: 1rem;
+}
+.projects-content{
+  width:60%;
+  margin-bottom:4%;
+}
+
+.projects-content .projects-body{
+  width:100%;
+  padding:.5%;
+  color:#080A0C;
+}
+
+
 
 /*
                                   CONTACT SECTION
