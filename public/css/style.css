@@ -185,6 +185,23 @@ p{
 /*
                                   SKILLS SECTION
 */
+
+.chip-container{
+  width:80%;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.chip{
+  text-align: center;
+  background-color:#b979c1;
+  font-weight: bold;
+  margin:3px;
+  padding:1%;
+  border-radius:50px;
+}
+
+
 #skills{
   background-color:#1B3336;
   background-image: url("/img/cubes.png");
@@ -193,7 +210,7 @@ p{
 #skills h2{color:#fff;}
 
 #skills h3{
-  color:#080A0C;
+  color:#fff;
   height:30px;
   font-size:1.5rem;
   line-height: 1;
