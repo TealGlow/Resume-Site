@@ -24,8 +24,6 @@ app.get("/resume", (req,res)=>{
   res.render("resume");
 });
 
-
-
 //app listening on PORT
 app.listen(3000, function(){
   console.log("Server started on port 3000.");
