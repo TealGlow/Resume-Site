@@ -247,6 +247,15 @@ p{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom:2%;
+}
+
+#experience hr{
+  width:80%;
+  border-color:#84298f;
+}
+#experience li{
+  margin:4% 3%;
 }
 
 .experience-information{
@@ -255,9 +264,15 @@ p{
 }
 .experience-content h3{
   /*possibly put spacing-padding?*/
-  padding:3% 5%;
-  background-color:#1B3336;
-  color:#fff;
+  padding-left:5%;
+  padding-top:3%;
+  font-size: 2rem;
+}
+
+.experience-content h4{
+  /*possibly put spacing-padding?*/
+  padding-left:5%;
+  font-size: 1rem;
 }
 .experience-content p{
   /*possibly put spacing-padding?*/
