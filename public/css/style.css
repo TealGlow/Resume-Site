@@ -137,6 +137,9 @@ p{
 
 
 
+
+
+
 /*
                               EDUCATION SECTIONS
 */
@@ -222,6 +225,19 @@ p{
 .project-holder{
   flex-wrap:wrap;
   flex-direction:row;
+}
+
+
+.project-Language{
+  width:100%;
+  margin:4% 0%;
+}
+.card-content{
+  flex-direction:column;
+  justify-content: space-between;
+}
+.project-btn-container{
+  margin:4% 0%;
 }
 
 .card-img-top{
