@@ -1,71 +1,58 @@
-/*html elements*/
-body{
-  /*background color is white if the images dont load*/
-  background-image: url("/img/gplay.png");
-  overflow-x: hidden;
+:root{
+  --header-img:url("/img/pawel-czerwinski-ruJm3dBXCqw-unsplash.jpg");
+  --link-color:#5d457e;
 }
+
+/*html elements*/
 body,html{
   height:100%;
   width:100%;
+  font-family: 'Montserrat', sans-serif;
 }
-::selection{
-  background-color: #84298f;
-  color:#fff;
-}
-::-moz-selection{
-  background-color: #84298f;
+::selection, ::-moz-selection{
+  background-color: #987DBB;
   color:#fff;
 }
 h1{
   font-size:10rem;
   text-align: center;
   font-family: 'Sree Krushnadevaraya', serif;
-  color:#fff;
+  color:#000;
 }
 h2{
   font-family: 'Raleway', sans-serif;
   font-weight:800;
-  color:#1B3336;
+  color:#000;
   font-size:4rem;
   letter-spacing: 5px;
-  text-align:center;
+  text-align: center;
   margin: 3%;
 }
 
 h3{font-size:1rem;}
 
 hr{
- border-color:#84298f;
+ border-color:#F091D2;
 }
 
-a{color:#84298f;}
+a{color:var(--link-color);}
 
-a:hover{color:#84298f;}
-
-p{
-  font-family: 'Montserrat', sans-serif;
-  font-weight:500;
-  color:#fff;
-}
-
-/*SCROLLBAR*/
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  display:hidden;
-}
-::-webkit-scrollbar-thumb {
-  background: #84298f;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #84298f;
-}
-
+a:hover{color:#987DBB}
 
 /*NAVBAR CUSTOM STYLING*/
-.navbar-custom{background-color:#080A0C;}
+.navbar-custom{background-color:var(--link-color);}
+.navbar-custom a{color:#fff;}
 
+
+.main-section:nth-child(2n){
+  background-color:#987DBB;
+  background-image: url("/img/cubes.png");
+}
+
+.main-section:nth-child(2n+1){
+  background-color:#c1f1ff;
+  background-image: url("/img/gplay.png");
+}
 
 /*PARALLAX BACKGROUND*/
 .parallax-bg{
@@ -92,11 +79,10 @@ p{
 
 
 /*SHADING ON ALL THE SECTIONS AND BOXES*/
-.box-shading{box-shadow: 0 0 7px #080A0C;}
-
+.box-shading{box-shadow: 0 0 7px var(--link-color);}
 
 /*TEXT SHADOW*/
-.txt-shadow{text-shadow: 0 0  2px #84298f;}
+.txt-shadow{text-shadow: 0 0  2px var(--link-color);}
 
 /*PADDING AND MARGINS*/
 .spacing-margin{margin:3% 5%;}
@@ -104,7 +90,7 @@ p{
 
 /*green small border*/
 .edu-box-styling{
-  border: 1px solid #1B3336;
+  border: 1px solid #987dbb;
   border-radius:3px;
   background-color:white;
 }
@@ -127,7 +113,8 @@ p{
 */
 #header{
   padding:17% 19%;
-  background-image: url("/img/dark.jpg");
+  background-image: var(--header-img);
+  height:100%;
   flex-direction: column;
 }
 #header p{text-align: center;}
@@ -162,20 +149,20 @@ p{
 }
 .education-information:nth-child(odd){
   float:left;
-  border-right: 10px solid #1B3336;
+  border-right: 10px solid #987dbb;
   left:0;
   clear:right;
 }
 .education-information:nth-child(even){
   float:right;
-  border-left: 10px solid #1B3336;
+  border-left: 10px solid #987dbb;
   right:0;
   clear:left;
 }
 .education-content h3{
   /*possibly put spacing-padding?*/
   padding:3% 5%;
-  background-color:#1B3336;
+  background-color:#987dbb;
   color:#fff;
 }
 .education-content p{
@@ -199,7 +186,7 @@ p{
 }
 .chip{
   text-align: center;
-  background-color:#eaa2fe;
+  background-color:#ABDAED;
   font-weight: bold;
   margin:3px;
   padding:1%;
@@ -207,12 +194,6 @@ p{
 }
 
 
-#skills{
-  background-color:#1B3336;
-  background-image: url("/img/cubes.png");
-}
-
-#skills h2{color:#fff;}
 
 #skills h3{
   color:#fff;
@@ -236,7 +217,7 @@ p{
 
 .smaller-chips{
   text-align: center;
-  background-color:#eaa2fe;
+  background-color:#ABDAED;
   font-size:.8rem;
   height:40px;
   margin:3px;
@@ -275,22 +256,14 @@ p{
 }
 .experience-content .experience-body{
   padding:.5%;
-  color:#080A0C;
+  color:#000;
 }
 
 
 /*
                              PROJECTS SECTION
 */
-#projects{
-  width:100%;
-  background-color:#1B3336;
-  background-image: url("/img/cubes.png");
-}
-#projects h2{
-  color:#fff;
-  margin:0%;
-}
+
 #projects .smaller-chip-container{
   justify-content: flex-start;
   margin-top:3%;
@@ -302,7 +275,7 @@ p{
 }
 
 .projects-information{
-  background-color: #84298f;
+  background-color: #f091d2;
   width:100%;
   padding:2% 3%;
   color:#fff;
@@ -339,7 +312,7 @@ p{
                                   CONTACT SECTION
 */
 #contact{
-  background-image: url("/img/dark.jpg");
+  background-image: url("/img/pawel-czerwinski-ruJm3dBXCqw-unsplash.jpg");
   padding:17% 19%;
 }
 #contact h1{
@@ -349,17 +322,6 @@ p{
 .contact-buttons{
   width:100%;
   text-align: center;
-}
-
-
-/*
-                            BLOG PAGE
-*/
-.blogTitle{
-  flex-direction: column;
-}
-.compose-content{
-  overflow:hidden;
 }
 
 /*

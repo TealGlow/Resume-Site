@@ -1,0 +1,17 @@
+/*
+                              HEADER SECTION
+*/
+#header{
+  padding:17% 19%;
+  background-image: var(--banner-bg-image);
+  flex-direction: column;
+  height:100%;
+}
+#header p{text-align: center;}
+
+.header-btn{
+  padding:1% 2%;
+  width:220px;
+  margin: 1%;
+  font-size:2rem;
+}
